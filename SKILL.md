@@ -65,11 +65,15 @@ template parts or patterns. See
 4. **Decide where the output lives.** Pattern, template part or template.
    [output-targets.md](./references/output-targets.md)
 5. **Write the markup.** Attributes and the saved HTML have to agree exactly.
-   [block-markup.md](./references/block-markup.md)
+   [block-markup.md](./references/block-markup.md). Optionally, submit the
+   decomposed tree to `block-runner assemble` instead of hand typing it.
+   [block-runner.md](./references/block-runner.md)
 6. **Wire dynamic parts.** Bindings, variations, Query Loop.
    [dynamic-content.md](./references/dynamic-content.md)
 7. **Verify.** Insert it, confirm no block validation errors, compare against
-   the design. [verification.md](./references/verification.md)
+   the design. [verification.md](./references/verification.md). Optionally,
+   run `block-runner validate` first as a fast pre-check.
+   [block-runner.md](./references/block-runner.md)
 
 ## Decision flow
 
@@ -118,6 +122,7 @@ An element in the design
 | [dynamic-content.md](./references/dynamic-content.md) | Rule 4 in full: bindings, variations, Query Loop |
 | [output-targets.md](./references/output-targets.md) | Pattern versus template part versus template, file headers, registration |
 | [verification.md](./references/verification.md) | Validating markup, checking against the design |
+| [block-runner.md](./references/block-runner.md) | Optional CLI validation/assembly tooling, and its limits |
 
 ## Related skills
 

@@ -35,6 +35,12 @@ Note that `file_get_contents` on a pattern file returns the PHP source
 unexecuted, so `esc_html_e( … )` calls appear as literal text. That is fine, the
 block comments are what is being parsed.
 
+This check, and check 2 below, can be automated with `block-runner validate`
+when it is installed in the project. It only understands block markup, not
+PHP, so it has to run on the raw markup before pattern-file translation
+wrapping is added, or directly on a template part or template. See
+[block-runner.md](./block-runner.md) for the exact command and that caveat.
+
 ### 2. Confirm the pattern registered
 
 ```
