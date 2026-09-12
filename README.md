@@ -29,7 +29,8 @@ references/
 ├── images-and-svg.md             rule 2 in full
 ├── dynamic-content.md            rule 4 in full
 ├── output-targets.md             pattern vs template part vs template
-└── verification.md               checking the markup actually works
+├── verification.md               checking the markup actually works
+└── block-runner.md               optional CLI assembly/validation via block-runner
 ```
 
 ## Install
