@@ -1,0 +1,13 @@
+{
+  "name": "hlb-site-editor",
+  "private": true,
+  "devDependencies": {
+    "block-runner": "0.9.4"
+  },
+  "scripts": {
+    "blocks:assemble": "block-runner assemble fixtures/assemble/hero-intent.json --out fixtures/patterns/example-hero.raw.html",
+    "blocks:validate:good": "block-runner validate \"fixtures/parts/*.html\" --json && block-runner validate fixtures/patterns/example-hero.raw.html --json",
+    "blocks:validate:gotcha": "! block-runner validate fixtures/patterns/example-hero.php --json",
+    "blocks:demo": "npm run blocks:assemble && npm run blocks:validate:good && npm run blocks:validate:gotcha"
+  }
+}

@@ -64,6 +64,17 @@ cd hlb-site-editor
 ln -s "$PWD" ~/.claude/skills/hlb-site-editor
 ```
 
+To check that [block-runner.md](./references/block-runner.md)'s claims still
+hold against the pinned block-runner version:
+
+```
+npm install
+npm run blocks:demo
+```
+
+Re-run this after bumping the pinned `block-runner` version in
+`package.json`.
+
 ## Scope
 
 This skill covers design to blocks. It does not cover theme scaffolding, build

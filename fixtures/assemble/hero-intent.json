@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "block": "core/group",
+      "attrs": { "tagName": "section", "align": "full" },
+      "children": [
+        { "block": "core/heading", "level": 2, "text": "Our services" },
+        { "block": "core/paragraph", "text": "What we do and who we do it for." }
+      ]
+    }
+  ]
+}
